@@ -63,17 +63,26 @@ My approach to cleaning and preparing the data was to append each category as a 
 
 I also dropped existing duplicates before koading the dataset into a SQLite database. 
 
-My approach thoughout the pipeline is in more detail within the Python script process_data.py. 
+My approach thoughout the pipeline is in more detail within the Python script `process_data.py`. 
 
 ## ML Pipeline Approach <a name="approach2"></a>
 This dataset is imbalanced (ie some labels like water have few examples). To counter this imbalanced classification problem, I followed the ensemble methodology; this involves modifying existing classification algorithms to make them appropriate for imbalanced data sets.
 
 The main objective of ensemble methodology is to improve the performance of single classifiers. The Random Forest Algorithm is one example of these technique. The MultiOutputClassifier function helps improve the performance of the model too, and hence has been included into the relevant code.
 
-My approach throughout the pipeline is in more detail within the Python script train_classifier.py. 
+My approach throughout the pipeline is in more detail within the Python script `train_classifier.py`. 
 
 ## Results<a name="results"></a>
-acbd
+Screenshots of the produced web app are provided below:
+![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/home-page-screenshot-1.jpg)
+![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/home-page-screenshot-2.jpg)
+
+The home page provides a space for one to classify a disaster message with three visualisations below it. The navigation bar on the top page provides links to Udacity, this Github page as well as my LinkedIn. 
+![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/classification-page-screenshot-1.jpg)
+![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/classification-page-screenshot-2.jpg)
+
+
+When a Classify Message button is clicked, the app displays the predicted classification/category(ies) for the message. In the case, the predicted categories are `Related`, `Aid Related`, `Weather Related` and `Storm`.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 I'd like to acknowledge Figure Eight for publicly providing an amazing dataset to perform this classification project. 

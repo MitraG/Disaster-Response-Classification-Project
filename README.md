@@ -1,5 +1,5 @@
 # Disaster Response Classification Project 
-A repository containing a ETL pipeline, a ML pipeline and a Flask app that deploys a fully-functioning disaster message classification website. 
+A repository containing a ETL pipeline, a ML pipeline and a Flask app that deploys a fully-functioning disaster message classification web app. 
 
 ### Table of Contents
 

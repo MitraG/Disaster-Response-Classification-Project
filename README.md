@@ -56,7 +56,7 @@ Other than the Anaconda distribution of Python versions 3 loaded into the code o
 3. Now open anoother Terminal Window, and run env|grep WORK. You will see an output showing:
     - WORKSPACEDOMAIN=Udacity-student-workspaces.com
     - WORKSPACEID=view6914b2f4 
-4. In a new browser type in the following: https://WORKSPACEID-3001.WORKSPACEDOMAIN. 
+4. In a new browser type in the following: `https://WORKSPACEID-3001.WORKSPACEDOMAIN`. 
 
 ## ETL Pipeline Approach <a name="approach1"></a>
 My approach to cleaning and preparing the data was to append each category as a unique column with its entries as 0/1 indicators. This is to flag if a message is classified under each category column using boolean data types.
@@ -78,9 +78,9 @@ Screenshots of the produced web app are provided below:
 ![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/home-page-screenshot-2.jpg)
 
 The home page provides a space for one to classify a disaster message with three visualisations below it. The navigation bar on the top page provides links to Udacity, this Github page as well as my LinkedIn. 
+
 ![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/classification-page-screenshot-1.jpg)
 ![alt text](https://github.com/MitraG/Disaster-Response-Classification-Project/blob/main/images/classification-page-screenshot-2.jpg)
-
 
 When a Classify Message button is clicked, the app displays the predicted classification/category(ies) for the message. In the case, the predicted categories are `Related`, `Aid Related`, `Weather Related` and `Storm`.
 

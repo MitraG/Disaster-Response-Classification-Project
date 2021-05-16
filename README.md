@@ -59,10 +59,18 @@ Other than the Anaconda distribution of Python versions 3 loaded into the code o
 4. In a new browser type in the following: https://WORKSPACEID-3001.WORKSPACEDOMAIN. 
 
 ## ETL Pipeline Approach <a name="approach1"></a>
-abcd
+My approach to cleaning and preparing the data was to append each category as a unique column with its entries as 0/1 indicators. This is to flag if a message is classified under each category column using boolean data types.
+
+I also dropped existing duplicates before koading the dataset into a SQLite database. 
+
+My approach thoughout the pipeline is in more detail within the Python script process_data.py. 
 
 ## ML Pipeline Approach <a name="approach2"></a>
-acbd 
+This dataset is imbalanced (ie some labels like water have few examples). To counter this imbalanced classification problem, I followed the ensemble methodology; this involves modifying existing classification algorithms to make them appropriate for imbalanced data sets.
+
+The main objective of ensemble methodology is to improve the performance of single classifiers. The Random Forest Algorithm is one example of these technique. The MultiOutputClassifier function helps improve the performance of the model too, and hence has been included into the relevant code.
+
+My approach throughout the pipeline is in more detail within the Python script train_classifier.py. 
 
 ## Results<a name="results"></a>
 acbd
